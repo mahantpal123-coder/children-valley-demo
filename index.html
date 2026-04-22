@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Children Valley School | Rajkishor Nagar, Bilaspur</title>
+  <meta name="description" content="Children Valley School – Shaping Bright Futures with Quality Education in Rajkishor Nagar, Bilaspur. Admissions open for Nursery to Higher Classes." />
+  <meta name="keywords" content="Children Valley School, Bilaspur, Rajkishor Nagar, school admissions, best school Bilaspur" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Floating Particles Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- Admission Popup -->
+  <div id="admissionPopup" class="popup-overlay">
+    <div class="popup-box">
+      <button class="popup-close" id="closePopup"><i class="fas fa-times"></i></button>
+      <div class="popup-badge">🎉 Admissions Open 2025–26</div>
+      <h2 class="popup-title">Join Children Valley School</h2>
+      <p class="popup-sub">Nursery to Higher Classes — Limited Seats Available!</p>
+      <div class="popup-features">
+        <span><i class="fas fa-check-circle"></i> Smart Classrooms</span>
+        <span><i class="fas fa-check-circle"></i> Qualified Teachers</span>
+        <span><i class="fas fa-check-circle"></i> Safe Campus</span>
+      </div>
+      <a href="#contact" class="popup-btn" id="popupApplyBtn">Apply Now</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="logo-text">
+          <span class="logo-name">Children Valley</span>
+          <span class="logo-sub">School</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#why" class="nav-link">Why Us</a></li>
+        <li><a href="#courses" class="nav-link">Courses</a></li>
+        <li><a href="#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" title="Toggle Dark/Light Mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <a href="#contact" class="nav-cta">Admit Now</a>
+        <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <canvas id="threeCanvas"></canvas>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge animate-fade-down">⭐ Rajkishor Nagar's Premier School</div>
+      <h1 class="hero-title animate-fade-up">
+        Welcome to<br><span class="hero-highlight">Children Valley</span><br>School
+      </h1>
+      <p class="hero-sub animate-fade-up delay-1">Shaping Bright Futures with Quality Education</p>
+      <div class="hero-btns animate-fade-up delay-2">
+        <a href="#contact" class="btn-primary"><i class="fas fa-star"></i> Admission Open</a>
+        <a href="#contact" class="btn-outline"><i class="fas fa-phone"></i> Contact Us</a>
+      </div>
+      <div class="hero-stats animate-fade-up delay-3">
+        <div class="stat">
+          <span class="stat-num" data-target="500">0</span><span>+</span>
+          <p>Students</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="30">0</span><span>+</span>
+          <p>Teachers</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="15">0</span><span>+</span>
+          <p>Years Legacy</p>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span>%</span>
+          <p>Result Rate</p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-indicator"><i class="fas fa-chevron-down"></i></div>
+    </div>
+    <!-- 3D floating elements -->
+    <div class="float-el el-1"><i class="fas fa-book-open"></i></div>
+    <div class="float-el el-2"><i class="fas fa-globe"></i></div>
+    <div class="float-el el-3"><i class="fas fa-atom"></i></div>
+    <div class="float-el el-4"><i class="fas fa-flask"></i></div>
+    <div class="float-el el-5"><i class="fas fa-pencil-alt"></i></div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-label">Our Story</div>
+      <h2 class="section-title">About <span>Children Valley School</span></h2>
+      <p class="section-sub">A trusted institution nurturing young minds in Rajkishor Nagar, Bilaspur</p>
+      <div class="about-grid">
+        <div class="about-visual">
+          <div class="about-card-3d">
+            <div class="about-card-inner">
+              <div class="school-visual">
+                <div class="building-wrap">
+                  <div class="building">
+                    <div class="building-top"><div class="flag"></div></div>
+                    <div class="building-body">
+                      <div class="window-row">
+                        <div class="window"></div><div class="window"></div><div class="window"></div>
+                      </div>
+                      <div class="window-row">
+                        <div class="window"></div><div class="window active"></div><div class="window"></div>
+                      </div>
+                    </div>
+                    <div class="building-door"><div class="door"></div></div>
+                  </div>
+                  <div class="school-path"></div>
+                  <div class="tree t1"></div>
+                  <div class="tree t2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-badge-float">
+            <i class="fas fa-award"></i>
+            <span>Excellence Award 2024</span>
+          </div>
+        </div>
+        <div class="about-content">
+          <p class="about-intro">Children Valley School is one of the most trusted and reputed educational institutions in Rajkishor Nagar, Bilaspur. We believe in nurturing each child's potential through a balanced approach of academics, values, and personal development.</p>
+          <div class="about-pillars">
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-book"></i></div>
+              <div>
+                <h4>Academic Excellence</h4>
+                <p>Structured curriculum designed for holistic growth and conceptual clarity.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-heart"></i></div>
+              <div>
+                <h4>Core Values</h4>
+                <p>Instilling discipline, integrity, and respect as life-long foundations.</p>
+              </div>
+            </div>
+            <div class="pillar">
+              <div class="pillar-icon"><i class="fas fa-seedling"></i></div>
+              <div>
+                <h4>Personal Growth</h4>
+                <p>Encouraging creativity, curiosity, and confidence in every student.</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-timeline">
+            <div class="tl-item"><div class="tl-dot"></div><div class="tl-text"><strong>Founded</strong> — A humble beginning with a big vision</div></div>
+            <div class="tl-item"><div class="tl-dot"></div><div class="tl-text"><strong>Expanded</strong> — Smart classrooms & modern labs introduced</div></div>
+            <div class="tl-item"><div class="tl-dot"></div><div class="tl-text"><strong>Today</strong> — 500+ students, award-winning faculty & programs</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section id="why" class="why section">
+    <div class="container">
+      <div class="section-label">Our Edge</div>
+      <h2 class="section-title">Why <span>Choose Us?</span></h2>
+      <p class="section-sub">We go beyond textbooks to create well-rounded, future-ready individuals</p>
+      <div class="why-grid">
+        <div class="why-card" data-delay="0">
+          <div class="why-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <h3>Qualified Teachers</h3>
+          <p>Experienced, certified educators committed to individual student success.</p>
+        </div>
+        <div class="why-card" data-delay="100">
+          <div class="why-icon"><i class="fas fa-laptop"></i></div>
+          <h3>Smart Classrooms</h3>
+          <p>Interactive digital boards, projectors, and e-learning tools for modern education.</p>
+        </div>
+        <div class="why-card" data-delay="200">
+          <div class="why-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Safe Campus</h3>
+          <p>24/7 CCTV surveillance, trained security, and child-safe environment.</p>
+        </div>
+        <div class="why-card" data-delay="300">
+          <div class="why-icon"><i class="fas fa-running"></i></div>
+          <h3>Sports Activities</h3>
+          <p>Cricket, football, badminton and more to keep students fit and competitive.</p>
+        </div>
+        <div class="why-card" data-delay="400">
+          <div class="why-icon"><i class="fas fa-theater-masks"></i></div>
+          <h3>Cultural Programs</h3>
+          <p>Annual day, debate, dance, music, and art to nurture creative expression.</p>
+        </div>
+        <div class="why-card" data-delay="500">
+          <div class="why-icon"><i class="fas fa-brain"></i></div>
+          <h3>Modern Learning</h3>
+          <p>Activity-based, experiential methods that make learning fun and effective.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses section">
+    <div class="container">
+      <div class="section-label">Academics</div>
+      <h2 class="section-title">Our <span>Classes & Programs</span></h2>
+      <p class="section-sub">From Nursery to Higher Classes — a complete educational journey</p>
+      <div class="courses-grid">
+        <div class="course-card">
+          <div class="course-icon">🌱</div>
+          <h3>Pre-Primary</h3>
+          <p class="course-level">Nursery · LKG · UKG</p>
+          <p>Play-based learning, storytelling, and foundational skills through fun activities.</p>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> Activity-Based Learning</li>
+            <li><i class="fas fa-check"></i> Phonics & Numeracy</li>
+            <li><i class="fas fa-check"></i> Art & Craft</li>
+          </ul>
+        </div>
+        <div class="course-card featured">
+          <div class="course-badge">Most Popular</div>
+          <div class="course-icon">📚</div>
+          <h3>Primary School</h3>
+          <p class="course-level">Class I – V</p>
+          <p>Strong foundation in core subjects with emphasis on conceptual understanding.</p>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> Core Subject Mastery</li>
+            <li><i class="fas fa-check"></i> Science Experiments</li>
+            <li><i class="fas fa-check"></i> Smart Board Classes</li>
+          </ul>
+        </div>
+        <div class="course-card">
+          <div class="course-icon">🔬</div>
+          <h3>Middle School</h3>
+          <p class="course-level">Class VI – VIII</p>
+          <p>Deeper academics, lab practicals, and co-curricular engagement for balanced growth.</p>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> Lab Practicals</li>
+            <li><i class="fas fa-check"></i> Critical Thinking</li>
+            <li><i class="fas fa-check"></i> Sports Programs</li>
+          </ul>
+        </div>
+        <div class="course-card">
+          <div class="course-icon">🎓</div>
+          <h3>Higher Classes</h3>
+          <p class="course-level">Class IX – XII</p>
+          <p>Board exam preparation, career counseling, and specialized subject streams.</p>
+          <ul class="course-features">
+            <li><i class="fas fa-check"></i> Board Exam Prep</li>
+            <li><i class="fas fa-check"></i> Career Counseling</li>
+            <li><i class="fas fa-check"></i> Competitive Coaching</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery section">
+    <div class="container">
+      <div class="section-label">Memories</div>
+      <h2 class="section-title">School <span>Gallery</span></h2>
+      <p class="section-sub">Glimpses of life at Children Valley School</p>
+      <div class="gallery-carousel">
+        <div class="gallery-track" id="galleryTrack">
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gcard-img gimg-1"></div>
+              <div class="gcard-label">Annual Day Celebration</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gcard-img gimg-2"></div>
+              <div class="gcard-label">Smart Classroom</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gcard-img gimg-3"></div>
+              <div class="gcard-label">Sports Day</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gcard-img gimg-4"></div>
+              <div class="gcard-label">Science Exhibition</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gcard-img gimg-5"></div>
+              <div class="gcard-label">Cultural Program</div>
+            </div>
+          </div>
+          <div class="gallery-slide">
+            <div class="gallery-card">
+              <div class="gcard-img gimg-6"></div>
+              <div class="gcard-label">Playground Activities</div>
+            </div>
+          </div>
+        </div>
+        <button class="gal-btn gal-prev" id="galPrev"><i class="fas fa-chevron-left"></i></button>
+        <button class="gal-btn gal-next" id="galNext"><i class="fas fa-chevron-right"></i></button>
+        <div class="gal-dots" id="galDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials section">
+    <div class="container">
+      <div class="section-label">Voices</div>
+      <h2 class="section-title">What <span>Parents Say</span></h2>
+      <p class="section-sub">Real stories from our school family</p>
+      <div class="testi-carousel">
+        <div class="testi-track" id="testiTrack">
+          <div class="testi-card">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Children Valley School has been a blessing for our child. The teachers are caring, the campus is safe, and the learning environment is truly exceptional."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">R</div>
+              <div><strong>Rajesh Sharma</strong><br><span>Parent of Class V Student</span></div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"My daughter has grown so much since joining this school. The cultural programs and sports activities have boosted her confidence tremendously."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">P</div>
+              <div><strong>Priya Verma</strong><br><span>Parent of Class III Student</span></div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"The smart classrooms and qualified faculty make this school stand out. My son scored 95% in board exams thanks to the excellent coaching here."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">A</div>
+              <div><strong>Anil Kumar</strong><br><span>Parent of Class X Student</span></div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+            <p>"Best school in Bilaspur without doubt. The values instilled here will last a lifetime. Highly recommend Children Valley School to every parent."</p>
+            <div class="testi-author">
+              <div class="testi-avatar">S</div>
+              <div><strong>Sunita Patel</strong><br><span>Parent of Class VIII Student</span></div>
+            </div>
+            <div class="testi-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="testi-btn" id="testiPrev"><i class="fas fa-arrow-left"></i></button>
+          <button class="testi-btn" id="testiNext"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Contact <span>Us</span></h2>
+      <p class="section-sub">We'd love to hear from you — reach out today</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p>Rajkishor Nagar, Bilaspur,<br>Chhattisgarh, India</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:8878633190">+91 88786 33190</a></p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <h4>School Hours</h4>
+              <p>Mon – Sat: 8:00 AM – 2:00 PM</p>
+            </div>
+          </div>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0!2d82.15!3d22.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDA0JzQ4LjAiTiA4MsKwMDknMDAuMCJF!5e0!3m2!1sen!2sin!4v1600000000000"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Children Valley School Location">
+            </iframe>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <input type="text" id="fname" placeholder="Your Full Name" required />
+            <label for="fname">Full Name</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" id="fphone" placeholder="Your Phone Number" required />
+            <label for="fphone">Phone Number</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="femail" placeholder="Your Email (Optional)" />
+            <label for="femail">Email Address</label>
+          </div>
+          <div class="form-group">
+            <select id="fclass">
+              <option value="">Select Class for Admission</option>
+              <option>Nursery</option><option>LKG</option><option>UKG</option>
+              <option>Class I</option><option>Class II</option><option>Class III</option>
+              <option>Class IV</option><option>Class V</option><option>Class VI</option>
+              <option>Class VII</option><option>Class VIII</option><option>Class IX</option>
+              <option>Class X</option><option>Class XI</option><option>Class XII</option>
+            </select>
+            <label for="fclass">Class</label>
+          </div>
+          <div class="form-group">
+            <textarea id="fmsg" rows="4" placeholder="Your Message"></textarea>
+            <label for="fmsg">Message</label>
+          </div>
+          <button type="submit" class="form-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> Message sent! We'll contact you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+            <span>Children Valley School</span>
+          </div>
+          <p>Shaping bright futures with quality education since our founding. Proudly serving Rajkishor Nagar, Bilaspur.</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About School</a></li>
+            <li><a href="#why">Why Choose Us</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Admissions</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#courses">Pre-Primary (Nursery-UKG)</a></li>
+            <li><a href="#courses">Primary (I-V)</a></li>
+            <li><a href="#courses">Middle School (VI-VIII)</a></li>
+            <li><a href="#courses">Higher Classes (IX-XII)</a></li>
+            <li><a href="#courses">Sports Program</a></li>
+            <li><a href="#courses">Cultural Activities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><i class="fas fa-map-marker-alt"></i> Rajkishor Nagar, Bilaspur, CG</li>
+            <li><i class="fas fa-phone"></i> <a href="tel:8878633190">+91 88786 33190</a></li>
+            <li><i class="fas fa-clock"></i> Mon–Sat: 8 AM – 2 PM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Children Valley School, Rajkishor Nagar, Bilaspur. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Live Chat Button -->
+  <a href="tel:8878633190" class="live-chat" title="Call Us Now">
+    <i class="fas fa-phone-alt"></i>
+    <span class="chat-tooltip">Call Now!</span>
+  </a>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
